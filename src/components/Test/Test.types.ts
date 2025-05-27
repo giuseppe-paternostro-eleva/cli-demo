@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
 
-export interface CardProps {
+export interface TestProps {
   children: ReactNode;
 }

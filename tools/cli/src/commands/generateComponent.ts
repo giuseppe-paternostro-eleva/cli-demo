@@ -3,7 +3,8 @@ import path from 'path';
 import chalk from 'chalk';
 
 export async function generateComponent(name: string) {
-  const componentDir = path.resolve(`src/components/${name}`);
+  const projectRoot = path.resolve(__dirname, '../../../../');
+const componentDir = path.join(projectRoot, 'src/components', name);
   if (fs.existsSync(componentDir)) {
     console.log(chalk.red('⚠️ Componente già esistente.'));
     return;
