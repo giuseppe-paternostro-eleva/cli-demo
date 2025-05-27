@@ -14,7 +14,7 @@ program
   .command('generate')
   .argument('<type>', 'Tipo da generare (component)')
   .argument('<name>', 'Nome')
-  .action(async (type, name) => {
+  .action(async (type: string, name: string) => {
     if (type === 'component') {
       await generateComponent(name);
     } else {

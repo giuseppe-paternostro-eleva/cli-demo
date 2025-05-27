@@ -11,7 +11,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "cli": "ts-node tools/cli/src/index.ts"
+    "cli:build": "yarn workspace bozz-cli build",
+    "cli": "yarn workspace bozz-cli start"
   },
   "dependencies": {
     "chalk": "^5.4.1",
