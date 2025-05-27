@@ -1,0 +1,7 @@
+{
+  "name": "cli",
+  "packageManager": "yarn@3.6.4",
+  "devDependencies": {
+    "@types/node": "^22.15.21"
+  }
+}
